@@ -14,7 +14,7 @@ Original Github: https://github.com/ALuhning/VPC_FT
 - The contract folder is a separate project with its own package.json. Ensure when running contract.js that the wasm file reflects the new contract and not the greeter contract. If using VS Code install the WebAssembly toolkit because this enables you to check the contract exports.
 - Contract was deployed manually using the following near-cli: 
 
-..delete the contract account if it already exists:
+.. delete the contract account if it already exists:
 near delete da3a-minter.da3a-1.testnet da3a-1.testnet
 
 ..create a fresh contract account:
