@@ -1,0 +1,15 @@
+{
+  "name": "main",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build": "asb",
+    "build:debug": "asb --target debug",
+    "test": "asp --nologo"
+  },
+  "devDependencies": {
+    "near-sdk-as": "^1.2.1",
+    "shelljs": "^0.8.4"
+  }
+}
