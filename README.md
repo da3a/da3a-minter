@@ -15,16 +15,16 @@ Original Github: https://github.com/ALuhning/VPC_FT
 - Contract was deployed manually using the following near-cli: 
 
 delete the contract account if it already exists:
-near delete da3a-minter.da3a-1.testnet da3a-1.testnet
+1. near delete da3a-minter.da3a-1.testnet da3a-1.testnet
 
 create a fresh contract account:
-near create-account da3a-minter.da3a-1.testnet --masterAccount da3a-1.testnet
+2. near create-account da3a-minter.da3a-1.testnet --masterAccount da3a-1.testnet
 
 build the new contract (use webassembly extension to check the /out/main.wasm file)
-node contract/compile.js
+3. node contract/compile.js
 
 deploy the contract 
-near deploy --accountId da3a-minter.da3a-1.testnet --wasmFile out/main.wasm
+4. near deploy --accountId da3a-minter.da3a-1.testnet --wasmFile out/main.wasm
 
 Ensure the CONTRACT_NAME variable is set to the contract account name and env file is used when calling "npm run script"
 
