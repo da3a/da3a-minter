@@ -31,4 +31,23 @@ Ensure the CONTRACT_NAME variable is set to the contract account name and env fi
 - CONTRACT_NAME=da3a-minter.da3a-1.testnet
 - "start": "env-cmd -f ./.env parcel src/index.html --open",
 
+##  Links
+
+1. Near from scratch
+https://www.youtube.com/watch?v=QP7aveSqRPo&t=284s
+
+2. Near Examples 
+https://examples.near.org/
+
+3. Learn Near
+https://learnnear.club/
+
+
+4. Markdown Cheatsheet
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+
+
+
+
 
