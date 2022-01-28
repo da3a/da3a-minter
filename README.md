@@ -4,14 +4,42 @@
 ##  Credits  
 Built following this excellent course: https://vitalpoint.ai/course/project-overview/
 
-All credit to course author: Aaron Luhning
+All credit to course author: ***Aaron Luhning***
 
 Original Github: https://github.com/ALuhning/VPC_FT
 
 ##  Notes
 
 - When manually adding react-router-dom make sure you add version 5 and not version 6.
-- Ensure the version of near-sdk-as is version 1.2.1. Version 3 will produce build errors when building the contract
+- Ensure the version of near-sdk-as is version 1.2.1. 
+
+    running create-near-app installed the following version of near-sdk-as:
+
+        "devDependencies": {
+        "near-sdk-as": "^3.2.3",
+        "shelljs": "^0.8.4"
+        }
+
+    running compile.js with this version of the sdk resulted in this error: 
+
+
+        ERROR TS2322: Type '~lib/as-bignum/integer/u128/u128' is not assignable to type '~lib/as-bignum/integer/safe/u128/u128'.
+
+            else if (value instanceof U128)       return u128.fromU128(<U128>value);
+                                                                        ~~~~~~~~~~~
+        in ~lib/as-bignum/integer/safe/u128.ts(145,64)
+
+
+    solution was to uninstall and reinstall an earlier version of near-sdk-as in the contract folder: 
+
+        npm uninstall near-sdk-as
+
+        npm install -D near-sdk-as@1.2.1
+
+  
+
+
+
 - The contract folder is a separate project with its own package.json. Ensure when running contract.js that the wasm file reflects the new contract and not the greeter contract. If using VS Code install the WebAssembly toolkit because this enables you to check the contract exports.
 - Contract was deployed manually using the following near-cli: 
 
