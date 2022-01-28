@@ -1,6 +1,17 @@
 # da3a minter
  A simple Near Protocol App enabling the minting of ERC-20 like fungible tokens. 
 
+ Based on Near's submission to Reddits scaling Bake Off Challenge that eventually wen to Arbitrum.
+
+ Read more about that hear: 
+ 
+
+ https://www.reddit.com/r/ethereum/comments/i1b4b3/nears_submission_to_reddits_scaling_bakeoff/
+
+
+ https://ambcrypto.com/ethereum-based-community-points-to-scale-with-arbitrum-on-reddit/
+
+
 ##  Credits  
 Built following this excellent course: https://vitalpoint.ai/course/project-overview/
 
